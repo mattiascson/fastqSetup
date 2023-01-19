@@ -132,7 +132,7 @@ do
           echo "Already copied"
         else
           # Copy to renamedfastq
-          echo "Copy renamedfastq"
+          echo "Copy renamedfastq/resequenced"
           find -L . -name $File -exec cp {} ./inFiles/fastq/renamedfastq/resequenced/ \;
           echo $File >> ./outFiles/copiedReseqFiles.log
         fi
